@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+.slider{
+    width: 1024px;
+    height:400px;
+    overflow: hidden;
+   margin: 10px auto;
+   position: relative;
+  
+  
+}
+.slides{
+    width:400%;
+    height: 100%;
+    display: flex;
+   
+}
+.slides img{
+    width:25%;
+    height: 100%;
+}
+.slider nav{
+    width: 100%;
+   z-index: 10;
+   position: absolute;
+   bottom: 10px;
+   display: flex;
+   justify-content: center;
+
+}
+ .slider nav label{
+    width:56px;
+    height: 16px;
+    display:inline-block ;
+    background-color: gray;
+    margin: 10px;
+    border: white 3px solid;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 1s;
+    
+}
+.slider nav label:hover{
+    border: black 3px solid;
+}
+.activeSlideNumber{
+    background-color: black !important;
+    border-color:gray !important;
+}
